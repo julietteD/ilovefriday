@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    border: 1px solid #000;
+    display: flex;
+}
+
+header .logo {
+    align-self: center;
+    padding: 30px;
+    border-right: 1px solid #000;
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrapper {
+    max-width: 1500px;
+    padding: 0 5%;
+}
+
+nav {
+    background-color: #ffbab3;
+    padding: 30px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a.actionBtn {
+    background-color: cyan;
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 5px 0;
+    border: 1px solid #000;
+    text-transform: uppercase;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+main {
+    padding: 30px 0;
+}
+
+.navaside {
+    background-color: lightgoldenrodyellow;
+    padding: 30px 20px;
+    align-self: center;
+    border-left: 1px solid #000;
+}
+
+#dayFlow {
+    display: flex;
+}
+
+#dayList {
+    width: 100%;
+    margin-left: 30px;
+}
+
+#dayList .element {
+    width: 100%;
+    padding: 10px 10px;
+}
+
+#dayList .item {
+    display: flex;
+    border: 1px solid #ccc;
+}
+
+#timeline {
+    border-left: 1px solid #000;
+    padding-left: 30px;
+}
+
+#timeline li {
+    height: 240px;
+    position: relative;
+}
+
+#timeline li::before {
+    content: '.';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+
+/* The switch - the box around the slider */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+}
+
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.checked .slider {
+    background-color: #2196F3;
+}
+
+.checked .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+.dateBox {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    width: 90%;
+    margin: 0 auto 50px auto;
+}
+
+.pageslist li {
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+    display: flex;
+}
+
+.pageslist li a {
+    width: 50%;
+    text-align: right;
+}
+
+.pageslist li h4 {
+    width: 50%;
+    text-align: left;
+}
+
+.todolist li {
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+    display: flex;
+}
+
+.todolist tr td {
+    border-bottom: 1px solid #000;
+    padding: 10px 20px;
+}
+
+.todolist li a {
+    align-self: center;
+    margin-right: 20px;
+}
+
+.todolist .actions {
+    width: 50%;
+    text-align: right;
+}
+
+.todolist li h4 {
+    width: 50%;
+    align-self: center;
+}
+
+.fromWYSIWYG {}
+
+.fromWYSIWYG h1 {
+    margin-bottom: 40px;
+}
+
+.fromWYSIWYG p {
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.fromWYSIWYG ul {
+    margin-bottom: 30px;
+}
+
+.fromWYSIWYG ul li {
+    line-height: 30px;
+    margin-bottom: 10px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.square_btn {
+    display: inline-block;
+    position: relative;
+    padding: 0.5em 1.4em;
+    text-decoration: none;
+    background: #668ad8;
+    /*Button Color*/
+    color: #FFF;
+    border-bottom: solid 5px #36528c;
+    /*daker than background*/
+    border-right: solid 5px #5375bd;
+    /*darker than background*/
+}
+
+.square_btn:before {
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    left: -1px;
+    width: 0;
+    height: 0;
+    border-width: 0 6px 6px 0px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: #FFF;
+}
+
+.square_btn:after {
+    content: " ";
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    width: 0;
+    height: 0;
+    border-width: 0px 6px 6px 0px;
+    border-style: solid;
+    border-color: #FFF;
+    border-bottom-color: transparent;
+}
+
+.square_btn:active {
+    /*on click*/
+    border: none;
+    -ms-transform: translate(6px, 6px);
+    -webkit-transform: translate(6px, 6px);
+    transform: translate(6px, 6px);
+    /*move LowerRight*/
+}
+
+.square_btn:active:after,
+.square_btn:active:before {
+    /*on click*/
+    content: none;
+    /*Border disappears*/
+}
+
+.formLine {
+    margin-bottom: 20px;
+}
+
+.formLineSubmit .square_btn {
+    font-size: 16px;
+    width: 100%;
+    padding: 17px;
+    text-transform: uppercase;
+}
+
+.formLine label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.select {
+    border: 1px solid #000;
+    background: url(../img/arrow_down.png) no-repeat right 20px center / 14px;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 15px;
+    min-width: 200px;
+}
+
+.select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    min-height: 38px;
+    width: 100%;
+    border: none;
+    margin: 0;
+    background: transparent;
+    font-size: 15px;
+}
+
+input[type="text"],
+input[type="date"] {
+    border: 1px solid #000;
+    padding: 20px;
+    width: 100%;
+}
+
+
+/*.tag {
+    background-color: #36528c;
+    color: #fff;
+    padding: 4px 6px;
+    font-size: 10px;
+    font-weight: 200;
+    margin: 0 10px;
+}*/
+
+#totalPercent {
+    width: 50%;
+    height: 50px;
+    background-color: pink;
+    position: relative;
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+
+#totalPercent b {
+    width: 10px;
+    height: 40px;
+    background-color: cyan;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    opacity: 0.6;
+    padding: 13px;
+    z-index: 2;
+    color: #000;
+    background-blend-mode: multiply;
+}
+
+#accountPage {
+    padding-top: 100px;
+}
+
+#accountPage h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.uploadBox {
+    margin: 25px 0 10px 0;
+    text-align: right;
+}
+
+.desktopOnly {
+    display: block
+}
+
+td.desktopOnly {
+    display: table-cell
+}
+
+.mobileOnly {
+    display: none;
+}
+
+table {
+    width: 100%
+}
+
+.tag_energie {
+    background-color: #ffbab3;
+}
+
+.tag {
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.tag_restaurants {
+    background-color: #668ad8;
+    color: #fff;
+}
+
+.tag_enfants {
+    background-color: #00ffff
+}
+
+.tag_nourriture {
+    background-color: #36528c;
+    color: #fff;
+}
+
+.tag_emprunt {
+    background-color: #039cae
+}
+
+.tag_voiture {
+    background-color: #ee2295
+}
+
+.tag_maison {
+    background-color: #ff96a8
+}
+
+.tag_loisirs {
+    background-color: #9dd7de
+}
+
+.tag_autre {
+    background-color: #cccccc
+}
+
+@media (max-width: 800px) {
+    .todolist tr td {
+        font-size: 13px;
+        padding: 10px 5px;
+    }
+    .todolist tr td small {
+        width: 120px;
+        display: block;
+        overflow: hidden;
+        font-size: 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .todolist tr td h2 {
+        font-size: 15px;
+    }
+    #barchart_diff {
+        width: 100%!important;
+    }
+    #piechart_3d {
+        width: 100%!important;
+        height: 350px;
+    }
+    td.desktopOnly {
+        display: none
+    }
+    .mobileOnly {
+        display: block;
+    }
+    #totalPercent {
+        width: 70%;
+    }
+}

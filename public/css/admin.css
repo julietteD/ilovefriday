@@ -1,0 +1,180 @@
+* {
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+aside {
+    width: 23%;
+    float: left;
+    padding: 1%;
+    margin-right: 2%;
+    height: 100vh;
+    border-right: 1px solid #eee;
+}
+
+main {
+    width: 75%;
+    float: left;
+    background: rgb(248, 248, 248);
+    background: linear-gradient(180deg, rgba(248, 248, 248, 1) 21%, rgba(255, 255, 255, 1) 100%);
+}
+
+header {
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+header h2 {
+    float: left;
+    font-size: 15px;
+    margin-top: 17px;
+    margin-bottom: 0;
+}
+
+header nav {
+    float: right;
+}
+
+main {
+    width: 75%;
+    float: left;
+    padding: 10px 3% 10px 1%;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.mainHeader {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.mainHeader h3 {
+    font-size: 20px
+}
+
+input.error {
+    border: 1px solid red
+}
+
+label.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.addLine {
+    text-align: right;
+    margin-bottom: 20px
+}
+
+.action img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+.loadedPicture {
+    margin: 3rem 0;
+    max-width: 800px;
+    height: auto;
+    border: 1px solid #eee;
+}
+
+label.fr {
+    padding-left: 30px;
+    background: url(../img/admin/fr.svg) no-repeat left center / auto 100%
+}
+
+label.nl {
+    padding-left: 30px;
+    background: url(../img/admin/nl.svg) no-repeat left center / auto 100%
+}
+
+label.en {
+    padding-left: 30px;
+    background: url(../img/admin/en.svg) no-repeat left center / auto 100%
+}
+
+aside .nav a {
+    display: block;
+    border-radius: .25rem;
+    padding: 10px;
+}
+
+aside .nav a.active,
+.nav a.active:hover {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.mainActions {
+    margin-bottom: 10px;
+}
+
+.mainActions a {
+    float: right;
+}
+
+.ui-datepicker {
+    z-index: 3000!important
+}
+
+.btn-danger,
+.btn-info {
+    margin: .5rem;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+textarea.summernote {
+    min-height: 500px
+}
+
+fieldset {
+    margin-bottom: 50px;
+}
+
+fieldset.special {
+    margin: 30px 0;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.special .col {
+    float: left;
+    width: 25%;
+    padding: 0 20px 0 0;
+}
+
+.special span {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.special .col label {
+    display: block;
+}
+
+.special .col select {
+    width: 100%;
+}
+
+.cols2 {
+    display: flex;
+    margin: 0 -1%;
+}
+
+.cols2 .col {
+    margin: 0 1%;
+    width: 50%;
+}
